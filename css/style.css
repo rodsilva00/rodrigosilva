@@ -1,3 +1,10 @@
+/*Reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*css--Home*/
 body {
     background-size: 100%;
     padding: auto;
@@ -11,9 +18,11 @@ body {
 }
 
 .menu {
-    background-color: black;
+    background-color: #424242;
     text-decoration: none;
     text-align: center;
+    box-shadow: 0px 2px 5px black;
+    text-shadow: 0px 2px 5px black;
 }
 
 .menu ul {
@@ -22,25 +31,44 @@ body {
 
 .menu li {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
 }
 
-li a {
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    transition: font-size 1s, background-color 1s;
+}
+
+.menu a:hover {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    padding: 10px;
+    background-color: black;
 }
 
-li a:hover {
-    text-decoration: underline;
+.apresentacao {
+    background: #4f4f4f;
+    box-shadow: 0px 2px 5px black;
+    text-align: center;
 }
 
 .apresentacao h1 {
     padding: 20px 0 0 0;
     margin: 0 auto;
-
+    color: white;
+    text-shadow: 0px 2px 5px black;
 }
 
+.apresentacao h2{
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-shadow: 0px 2px 5px black;
+}
 
 .site-subtitulo,.site-titulo  {
     text-align: center;
@@ -48,4 +76,10 @@ li a:hover {
 
 .site-subtitulo {
     font-style: italic;
+}
+
+
+.img-apresentacao {
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px black;
 }
