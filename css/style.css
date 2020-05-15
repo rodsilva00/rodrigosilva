@@ -6,7 +6,7 @@
 }
 /*css--Home*/
 body {
-    background-size: 100%;
+    background-size: 100vw;
     padding: auto;
     margin: auto;
     background: #eeeeee;
@@ -18,10 +18,10 @@ body {
 }
 
 .menu {
-    background-color: #424242;
-    text-decoration: none;
-    text-align: center;
+    background-color: #202020;
     box-shadow: 0px 2px 5px black;
+    text-align: center;
+    text-decoration: none;
     text-shadow: 0px 2px 5px black;
 }
 
@@ -42,17 +42,18 @@ body {
     transition: font-size 1s, background-color 1s;
 }
 
-.menu a:hover {
+.menu a:hover { color: black;}
+.menu li:hover  {
     text-decoration: none;
-    font-size: 20px;
-    color: white;
-    padding: 10px;
-    background-color: black;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 0px 2px 5px whitesmoke;
 }
 
 .apresentacao {
-    background: #4f4f4f;
-    box-shadow: 0px 2px 5px black;
+    background: #2E2E2E;
+    box-shadow: 0px 2px 5px black;    
+    height: 200px;
     text-align: center;
 }
 
@@ -78,8 +79,20 @@ body {
     font-style: italic;
 }
 
-
 .img-apresentacao {
+    border: 3px solid white;
     border-radius: 50%;
     box-shadow: 2px 2px 4px black;
+}
+
+.principal{
+    text-align: center;
+    margin: 20px auto;
+    padding: 0px 10vw 10px 10vw ;
+}
+
+.principal-sobre {
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    height: 55vh;
 }
