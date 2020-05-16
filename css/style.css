@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ul li {
+    list-style: none;
+}
 /*css--Home*/
 body {
     background-size: 100vw;
@@ -11,6 +15,11 @@ body {
     margin: auto;
     background: #eeeeee;
     font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 0fr 1fr;
 }
 
 .linha-menu {
@@ -47,7 +56,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     background-color: white;
-    box-shadow: 0px 2px 5px whitesmoke;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .apresentacao {
@@ -80,19 +89,68 @@ body {
 }
 
 .img-apresentacao {
+    text-align: center;
+    position: relative;      
     border: 3px solid white;
     border-radius: 50%;
     box-shadow: 2px 2px 4px black;
 }
 
-.principal{
-    text-align: center;
-    margin: 20px auto;
-    padding: 0px 10vw 10px 10vw ;
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 50vh;
+    margin: 0 5vw;
 }
 
 .principal-sobre {
+    margin-left: 5vw;
+}
+
+.principal-texto {
+    min-height: 45vh;  
     background-color: #f4f4f4;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    height: 55vh;
+    margin-top: 20px;
+    padding: 20px;
 }
+
+.media-social ul {
+    text-align: center;  
+    margin-top: 20px;
+    margin-right: 3vw;
+}
+
+.icon-social {
+    margin-left: 1vw;
+    margin-top: 20px;
+    opacity: 0.5;
+    height: 40px;
+    width: 40px;
+}
+
+/*CSS--Responsive*/
+@media screen and (max-width: 600px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 0fr;
+    }
+    .principal-sobre {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+     
+    .media-social ul, .media-social {
+        display: inline-flex;
+        margin: 0 auto;
+    }
+
+    .icon-social {
+        margin-left: 5vw;
+        opacity: 0.5;
+        height: 40px;
+        width: 40px;
+    }
+
+  }
