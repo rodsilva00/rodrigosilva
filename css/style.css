@@ -117,7 +117,7 @@ body {
     margin-top: 20px;
     padding: 10vh;
 }
-
+.principal-texto p {margin-top: 20px;}
 .media-social {
     min-height: 50vh;
     text-align: center;  
@@ -158,6 +158,13 @@ body {
         opacity: 0.5;
         height: 40px;
         width: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 435px) {
+    .principal-texto h2 {
+        margin-top: 20px;
     }
 
   }
