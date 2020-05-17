@@ -123,10 +123,14 @@ body {
     text-align: center;  
     margin-top: 20px;
 }
+.principal-info {
+    font-weight: bold;font-size: 10px;
+}
 
 .media-social ul {
     padding-top: 4vh;
 }
+
 
 .icon-social {
     margin-left: 1vw;
@@ -134,6 +138,12 @@ body {
     opacity: 0.5;
     height: 40px;
     width: 40px;
+    transition: opacity 0.5s, background-color 0.5s;
+}
+.icon-social:hover {
+    background-color: white ;
+    opacity: 1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 /*CSS--Responsive*/
