@@ -79,28 +79,50 @@
                     <p id="segmento">Segmento: Jurídico</p>
                     <p>Auditoria de dados, tratamento de dados, analise de dados e elaboração de relatórios gerenciais, Analytics em BI,</p>
                   </div>
-                </div>
-                
-                </div>
               </div>
         </section>
         <section class="contato">
-          <h2  class="titulos" id="experiencia"><img class="portifolio" src="icon-social/mail_icon_128820.png" alt="Experiência"><br>Contato</h2>
-          <div class="forms-contato">
-            <label for="nome">Nome</label>
-            <input class="Nome" id="Nome" type="text">
+          <h2 id="contato" class="titulos" id="experiencia"><img class="portifolio" src="icon-social/mail_icon_128820.png" alt="Experiência"><br>Contato</h2>
+          <div class="principal-contato">
+            <div class="forms-contato">
+              <form class="form" method="post" action="">
+                <label for="nome" id="descricao-nome" >Nome e Sobrenome</label>
+                <input id="nome" class="Nome" name="nome" placeholder="Nome e Sobrenome" required> 
+                <label for="nome" id="descricao-nome" >Assunto</label>
+                <input id="assunto" class="assunto" name="Assunto" placeholder="Assunto" required>
+                <label for="nome" id="descricao-nome" >Email</label>
+                <input id="email" type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <input class="enviar" type="submit" value="Enviar">
+              </form>
+            </div>
+            <div class="info-contato">
+              <div class="info">
+                <h4>📧 Email</h4>
+                <p>rodsilva.santos00@gmail.com</p>
+              </div>
+              <div class="info">
+                <h4>📌 Endereço</h4>
+                <p>Salvador-BA</p>
+              </div>
+              <div class="info">
+                <h4>📱 Whatsapp</h4>
+                <p>71 8312-6704</p>
+              </div>
+            </div>
           </div>
         </section>
     </main> 
     <footer>
-      <div class="footer">      <p class="text-center">© CV 2020 Rodrigo S · Todos os direitos reservados</p>
+      <div class="footer">      
+        <p class="text-center">© CV 2020 Rodrigo S · Todos os direitos reservados</p>
         <div class=".icon-social-footer">
           <a target="_blank" href="https://github.com/Rodsivla"><img class="github" src="icon-social/github_icon_128848.png"></a>
           <a target="_blank" href="https://www.linkedin.com/in/rodrigo-silva-santos-00580498"><img class="linkedin" src="icon-social/linkedin_icon_128826.png"></a>
           <a target="_blank" href="https://www.instagram.com/rodjeck/"><img class="instagram" src="icon-social/instagram_icon_128835.png"></a>
           <a target="_blank" href="https://www.facebook.com/rodrigo.jack.90/"><img class="facebook" src="icon-social/facebook_icon_128869.png"></a>
         </div>
-    </div>
+      </div>
     </footer>
 </body>
 </html>
