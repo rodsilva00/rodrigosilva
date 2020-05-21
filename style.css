@@ -340,7 +340,7 @@ main  h2 {text-align: center; }
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);   
 }
 
-form input, form textarea{
+form input, form textarea {
   color: #eeeeee;
   background-color: transparent;
   font-size: 1em;
@@ -408,8 +408,8 @@ label {display: none;}
 
 /* css--footer */
 
-footer{ background-color: white;}
-.footer{
+footer { background-color: white;}
+.footer {
   font-size: 1em;
   color: #202020;
   text-align: center;  
@@ -417,7 +417,7 @@ footer{ background-color: white;}
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); 
 }
 
-.footer img:hover{
+.footer img:hover {
   border-radius: 50%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
@@ -485,13 +485,11 @@ footer{ background-color: white;}
   .info-contato {
     margin-bottom: 50px;
   }
-  
-
 }
 
 @media screen and (max-width: 435px) {
   .principal-texto h2 {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   .menu {
@@ -500,7 +498,6 @@ footer{ background-color: white;}
 
   .menu li, .menu hr {
     display: none;
-
   }
 
   .icon-menu:hover { 
@@ -515,6 +512,7 @@ footer{ background-color: white;}
     cursor: pointer;
     text-shadow: 0px 2px 5px black;
   }
+  
   .menu-responsive, .icon-menu {
     position: fixed;
     display: inline;
@@ -563,7 +561,4 @@ footer{ background-color: white;}
     width: 30%;
     transition: all 1s;
   }
-
-
-
 }
