@@ -58,6 +58,22 @@ body {
   display: inline-flex;
 }
 
+.world::after {
+  font-size: 0.7em;
+  content: '|';
+  opacity: 0.7;
+  animation: pisca 1s infinite;
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 0.7;
+  }
+  50%{
+    opacity: 0.1;
+  }
+}
+
 .menu a:active {transition: all;}
 .menu a {
   text-decoration: none;
@@ -114,6 +130,7 @@ body {
   border-radius: 50%;
   box-shadow: 2px 2px 4px black;
 }
+
 
 main  h2 {text-align: center; }
 .principal {
@@ -176,7 +193,7 @@ mark{
 }
 /*CSS - -time-line*/
 
-/* The actual timeline (the vertical ruler) */
+/* CSS-- timeline (régua vertical) */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -213,7 +230,7 @@ mark{
   text-align: start;
 }
 
-/* Container around content */
+/* Container para conteudo */
 .container {
   padding: 10px 50px;
   position: relative;
@@ -221,7 +238,7 @@ mark{
   width: 50%;
 }
 
-/* The circles on the timeline */
+/* Circulos da Time-line */
 .container::after {
   content: '';
   position: absolute;
@@ -236,17 +253,17 @@ mark{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
-/* Place the container to the left */
+/* CSs - -recipiente à esquerda */
 .left {
   left: 0;
 }
 
-/* Place the container to the right */
+/* CSs - -recipiente à direita */
 .right {
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Setas ao container esquerdo (apontando para a direita) */
 .left::before {
   content: " ";
   height: 0;
@@ -261,7 +278,7 @@ mark{
   
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Setas ao container direito (apontando para a esquerda) */
 .right::before {
   content: " ";
   height: 0;
@@ -275,12 +292,12 @@ mark{
   border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Css --  círculo para recipientes no lado direito*/
 .right::after {
   left: -16px;
 }
 
-/* The actual content */
+/* Css--conteudo time-line */
 .content {
   padding: 20px 30px;
   background-color: white;
