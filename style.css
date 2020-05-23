@@ -527,11 +527,12 @@ footer{ background-color: white;}
     width: 100vw;
     height: 100vh;
     transition: all 1S;
-    z-index: 3;
+    z-index: -1;
   }
   #check:checked ~.fundo-menu {
     transition: all 1S; 
-    background: rgba(0, 0, 0, 0.623);   
+    background: rgba(0, 0, 0, 0.623); 
+    z-index: 3;  
   }
 
   .menu, .icon-menu {
@@ -592,8 +593,4 @@ footer{ background-color: white;}
     width: 30%;
     transition: all 1s;
   }
-
-
-
 }
-
