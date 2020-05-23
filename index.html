@@ -9,19 +9,12 @@
 </head>
 <body>
     <header class="header">
-      <div class="principal-menu">
-        <input class="icon-menu" id="check" type="checkbox">          
+      <div class="principal-menu">       
+        <input class="icon-menu" id="check" type="checkbox" :checked>          
         <label for="check" class="icon-menu">
           <img  src="icon-social/list_icon_128825.png" alt="menu">
-        </label>
-        <nav class="menu-responsive">
-          <ul>
-            <li><a href="#">Ínicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#experiencia">Experiências</a></li>
-            <li><a href="#contato">Contato</a></li> 
-          </ul>
-        </nav>
+        </label> 
+        <div class="fundo-menu"></div>       
         <nav class="menu">
             <ul>
               <hr class="linha-menu">
@@ -35,7 +28,7 @@
         </div>
           <div class="apresentacao">
             <h1 class="site-titulo"><strong>Rodrigo Silva</strong></h1>
-            <h2 class="site-subtitulo">Administrador, Analista de informações</h2>
+            <h2 class="site-subtitulo">Administrador, Analista de informações, Iniciante Front-end</h2>
             <img class="img-apresentacao"  src="imagem/Rodrigo.JPG" alt="Rodrigo Silva">  
         </div>
     </header>   
@@ -43,8 +36,8 @@
         <section class="principal">
             <div class="principal-sobre"> 
                 <div class="principal-texto">
-                    <h2 id="sobre">Hello world!🌎</h2>
-                    <p class="text-center">Eu sou Rodrigo. Administrador formado pela UFBA atuando como Analista de informações a mais de 1 ano. Experiência de 4 anos na área de gestão administrativa. Conhecimento avançado em Excel e ferramenta de BI (Power BI). Iniciante em Front-end, aprofundando estudos, incluindo HTML5, CSS3 e JavaScript. Em Data science, estudos focado com a linguagem Python.</p>
+                    <h2 id="sobre" class="world">Hello world!</h2>
+                    <p class="text-center">Eu sou Rodrigo. Administrador formado pela UFBA atuando como Analista de informações a mais de 1 ano. Experiência de 4 anos na área de gestão administrativa. Conhecimento avançado em Excel e ferramenta de BI (Power BI).<mark> Iniciante no Front-end</mark>, aprofundando estudos, incluindo HTML5, CSS3 e JavaScript. Em Data science, estudos focado na linguagem Python.</p>
                 </div>
             </div>                       
             <div class="media-social">
@@ -139,5 +132,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
