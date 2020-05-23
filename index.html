@@ -1,137 +1,595 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Silva</title>    
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-      <div class="principal-menu">       
-        <input class="icon-menu" id="check" type="checkbox" :checked>          
-        <label for="check" class="icon-menu">
-          <img  src="icon-social/list_icon_128825.png" alt="menu">
-        </label> 
-        <div class="fundo-menu"></div>       
-        <nav class="menu">
-            <ul>
-              <hr class="linha-menu">
-              <li><a href="#">Ínicio</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#experiencia">Experiências</a></li>
-              <li><a href="#contato">Contato</a></li> 
-              <hr class="linha-menu">         
-            </ul>
-        </nav>
-        </div>
-          <div class="apresentacao">
-            <h1 class="site-titulo"><strong>Rodrigo Silva</strong></h1>
-            <h2 class="site-subtitulo">Administrador, Analista de informações, Iniciante Front-end</h2>
-            <img class="img-apresentacao"  src="imagem/Rodrigo.JPG" alt="Rodrigo Silva">  
-        </div>
-    </header>   
-    <main>
-        <section class="principal">
-            <div class="principal-sobre"> 
-                <div class="principal-texto">
-                    <h2 id="sobre" class="world">Hello world!</h2>
-                    <p class="text-center">Eu sou Rodrigo. Administrador formado pela UFBA atuando como Analista de informações a mais de 1 ano. Experiência de 4 anos na área de gestão administrativa. Conhecimento avançado em Excel e ferramenta de BI (Power BI).<mark> Iniciante no Front-end</mark>, aprofundando estudos, incluindo HTML5, CSS3 e JavaScript. Em Data science, estudos focado na linguagem Python.</p>
-                </div>
-            </div>                       
-            <div class="media-social">
-                <ul>
-                    <li><a href="https://github.com/Rodsivla" target="_blank" ><img class="icon-social" src="icon-social/github_social_media_logo_icon-icons.com_76351.svg" alt="Github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/rodrigo-silva-santos-00580498" target="_blank"><img class="icon-social" src="icon-social/linkedin_social_media_logo_icon-icons.com_76341.svg" alt="Linkedin"></a></li>
-                    <li><a href="https://www.facebook.com/rodrigo.jack.90/" target="_blank"><img class="icon-social" src="icon-social/facebook_social_media_logo_icon-icons.com_76337.svg" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/rodjeck/" target="_blank"><img class="icon-social" src="icon-social/instagram_social_media_logo_icon-icons.com_76339.svg" alt="Instagran"></a></li>
-                 </ul> 
-            </div>
-        </section>
-        <section class="time-line">
-          <br>
-            <h2  class="titulos" id="experiencia"><img class="portifolio" src="icon-social/icon-experiencia.png" alt="Experiência"><br>Experiências</h2>
-            <div class="timeline">
-                <div class="container left">
-                  <div class="content">
-                    <h2>2010</h2>
-                    <p id="cargo">BackOffice</p>
-                    <p id="segmento">Segmento: Telecomunicação</p>
-                    <p>Consultas e Cadastro de Propostas, Habilitação de Antenas, Controle de
-                      Vendas, Controle Financeiro.</p>
-                  </div>
-                </div>
-                <div class="container right">
-                  <div class="content">
-                    <h2>2011-2014</h2>
-                    <p id="cargo">Jovem Aprendiz</p>
-                    <p id="segmento">Segmento: Saúde</p>
-                    <p>Transversalisação, elaboração de relatórios e documentos,
-                      dispensação de materiais, utilização de sistemas (saída de materiais e diligenciamento),
-                      elaboração de planilhas eletrônicas.</p>
-                  </div>
-                </div>
-                  <div class="container left">
-                  <div class="content">
-                    <h2>2015-2019</h2>
-                    <p id="cargo">Auxiliar administrativo</p>
-                    <p id="segmento">Segmento: Educação</p>
-                    <p>Elaboração de relatório estatistico, acompanhamento de matricula, cadastro e alocação de disciplinas.</p>
-                  </div>
-                </div>
-                  <div class="container right">
-                  <div class="content">
-                    <h2>2019-2020</h2>
-                    <p id="cargo">Analista de informações</p>
-                    <p id="segmento">Segmento: Jurídico</p>
-                    <p>Auditoria de dados, tratamento de dados, analise de dados e elaboração de relatórios gerenciais, Analytics e gerenciamento de BI.</p>
-                  </div>
-              </div>
-        </section>
-        <section class="contato">
-          <h2 id="contato" class="titulos" id="experiencia"><img class="portifolio" src="icon-social/mail_icon_128820.png" alt="Experiência"><br>Contato</h2>
-          <div class="principal-contato">
-            <div class="forms-contato">
-              <form class="form" method="post" action="">
-                <label for="nome" id="descricao-nome" >Nome e Sobrenome</label>
-                <input id="nome" class="Nome" name="nome" placeholder="Nome e Sobrenome" required> 
-                <label for="nome" id="descricao-nome" >Assunto</label>
-                <input id="assunto" class="assunto" name="Assunto" placeholder="Assunto" required>
-                <label for="nome" id="descricao-nome" >Email</label>
-                <input id="email" type="email" placeholder="Email" required>
-                <textarea placeholder="Mensagem" required></textarea>
-                <input class="enviar" type="submit" value="Enviar">
-              </form>
-            </div>
-            <div class="info-contato">
-              <div class="info">
-                <h4>📧 Email</h4>
-                <p>rodsilva.santos00@gmail.com</p>
-              </div>
-              <div class="info">
-                <h4>📌 Endereço</h4>
-                <p>Salvador-BA</p>
-              </div>
-              <div class="info">
-                <h4>📱 Whatsapp</h4>
-                <p>71 8312-6704</p>
-              </div>
-            </div>
-          </div>
-        </section>
-    </main> 
-    <footer>
-      <div class="footer">      
-        <p class="text-center">© CV 2020 Rodrigo S · Todos os direitos reservados</p>
-        <div class=".icon-social-footer">
-          <a target="_blank" href="https://github.com/Rodsivla"><img class="github" src="icon-social/github_icon_128848.png"></a>
-          <a target="_blank" href="https://www.linkedin.com/in/rodrigo-silva-santos-00580498"><img class="linkedin" src="icon-social/linkedin_icon_128826.png"></a>
-          <a target="_blank" href="https://www.instagram.com/rodjeck/"><img class="instagram" src="icon-social/instagram_icon_128835.png"></a>
-          <a target="_blank" href="https://www.facebook.com/rodrigo.jack.90/"><img class="facebook" src="icon-social/facebook_icon_128869.png"></a>
-        </div>
-      </div>
-    </footer>
-    <script src="app.js"></script>
-</body>
-</html>
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; color: black;
+}
+/*css--Home*/
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: 100vw;
+  padding: auto;
+  margin: auto;
+  background: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 0fr 1fr;
+}
+
+.linha-menu {
+  color: whitesmoke;
+}
+
+.icon-menu {
+  display: none;    
+  width: 30px;
+  height: 30px;}
+
+.icon-menu {display: none;}
+
+.menu {
+  height: 50px;
+  position: fixed;
+  width: 100vw;
+  background-color: #202020;
+  box-shadow: 0px 2px 5px black;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 2px 5px black;
+  z-index:4;
+}
+
+.menu ul {
+  margin: 15px;
+  display: inline-flex;
+}
+
+.menu a:active {transition: all;}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  transition: font-size 1s, background-color 1s;
+  font-size: 1em; 
+  transition: all 1s;
+  left: 0;
+}
+
+.menu a:hover { 
+  background-color: white;  
+  color: black;
+  font-size: 1.1em;
+  transition: all 1s;
+}
+
+
+.apresentacao {
+  margin-top: 50px;
+  background: #2E2E2E;
+  box-shadow: 0px 2px 5px black;    
+  height: 200px;
+  text-align: center;
+  z-index:1;
+}
+
+.apresentacao h1 {
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 0px 2px 5px black;
+}
+
+.apresentacao h2{
+  color: white;
+  padding: 20px 20px;
+  font-size: 20px;
+  text-shadow: 0px 2px 5px black;
+}
+
+.site-subtitulo,.site-titulo  {
+  text-align: center;
+}
+
+.site-subtitulo {
+  font-style: italic;
+}
+
+.img-apresentacao {
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px black;
+}
+
+main  h2 {text-align: center; }
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  grid-template-rows: 55vh;
+  margin: 0 10vw;
+}
+
+mark{
+  background-color: transparent;
+  font-weight: bold;
+  text-shadow: 0 2px 5px 0 #797575;
+}
+
+.principal-sobre {
+  margin-left: 5vw;
+  margin-left: 5vw;
+}
+
+.principal-texto:active{background-color: #494747; font-size: 1.1em; color: #eeeeee;}
+.principal-texto {
+  font-size: 1.1em;
+  min-height: 50vh;  
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  margin-top: 20px;
+  padding: 0 10vh 10vh 10vh;
+  transition: all 1.5s;
+}
+
+.principal-texto p {margin-top: 20px;}
+.principal-texto h2 {padding-top: 10vh;}
+
+.media-social {
+  min-height: 50vh;
+  text-align: center;  
+  margin-top: 20px;
+}
+
+
+.media-social ul {
+  padding-top: 4vh;
+}
+
+.icon-social {
+  margin-left: 1vw;
+  margin-top: 20px;
+  opacity: 0.5;
+  height: 40px;
+  width: 40px;
+  transition: all 1s;
+}
+.icon-social:hover {
+  transform: rotateY(360deg);
+  background-color: white ;
+  opacity: 1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+/*CSS - -time-line*/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulos{padding: 10vh 5vw 5vh 5vw;}
+.time-line p {text-align: center;}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #f4f4f4;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+#cargo::before {
+  content: '💼 ';
+}
+
+#cargo {
+  padding: 10px 10px 5px 10px;
+  font-weight: bold;
+  text-align: center ;
+}
+#segmento{
+  padding-bottom: 10px;
+  font-size: 0.7em;
+  text-align: start;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #2e2e2e;
+  border: 4px solid #f4f4f4;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  transition: all 0.5s;
+}
+
+.content:hover{background-color: #424242; color: #eeeeee;}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* css--contato */
+
+.principal-contato {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: grid;
+  font-size: 1em;
+  color: #eeeeee;
+  background-color: #424242;
+  width: 40vw;
+  margin: 10px;
+  margin: 20px 0px 40px 5px;
+  padding: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);   
+}
+
+form input, form textarea{
+  color: #eeeeee;
+  background-color: transparent;
+  font-size: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  opacity: 1;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); 
+}
+
+label {display: none;}
+
+.form input {max-width: 100vw;}
+.form textarea {
+  max-width: 100vw;
+  height: 20vh;
+}
+
+::placeholder:hover {padding: 10px;}
+::placeholder {
+  font-size: 0.8em;
+  color: white;
+}
+
+.enviar:hover {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-size: 1.1em;
+  background-color: #424242;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); 
+}
+.enviar {
+  color: #202020;
+  background-color: white;
+  margin-top: 10px;
+  width: 20%;
+  transition: all 1s;
+}
+
+
+.info-contato {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: end;
+  font-size: 1em;
+  color: #424242;
+  background-color: #f4f4f4;
+  width: 40vw;
+  margin: 20px 20px 40px 0px;
+  padding: 40px 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); 
+}
+
+.info {
+  text-align: end;
+  margin-top: 40px;
+}
+
+/* css--footer */
+
+footer{ background-color: white;}
+.footer{
+  font-size: 1em;
+  color: #202020;
+  text-align: center;  
+  padding: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); 
+}
+
+.footer img:hover{
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.footer img {
+  border-radius: 0%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  margin-top: 5px;
+  padding: 5px;
+  transition: all 1s;
+}
+
+/*CSS--Responsive-principal*/
+@media screen and (max-width: 1024px) {
+  
+  nav {font-size: 0.8em;}
+  .principal {
+      display: inline-block;
+      text-align: center;
+  }
+  .principal-sobre {
+      width: 80vw;
+      margin: 0 auto;
+  }
+
+  .principal-texto {
+      min-height: 30vh; 
+      padding: 0vh 5vh 5vh 5vh;
+  }
+  .principal-texto h2 {padding-top: 12vh;}
+  .principal-texto p {
+      font-size: 1em;
+  }
+    
+  .media-social ul, .media-social {
+      display: inline-flex;
+      margin-top: 0;
+      padding-top: 0;
+      min-height: 10vh;
+  }
+
+  .icon-social {
+      margin-left: 5vw;
+      opacity: 0.5;
+      height: 40px;
+      width: 40px;
+  }
+
+  .principal-contato {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .form, .info-contato {
+    margin: auto;
+    width: 80%;
+  }
+  .form textarea {max-width: 70vw;}
+
+  .info-contato {
+    margin-bottom: 50px;
+  }
+  
+
+}
+
+@media screen and (max-width: 435px) {
+  .principal-texto h2 {
+      margin-top: 20px;
+  }
+
+  .menu ul, .menu hr {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;  
+
+  }
+
+  .icon-menu img:hover {background-color: white;}  
+  .icon-menu img {background-color: #f4f4f4;margin: 10px;}
+  
+  .icon-menu {
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    position: fixed;
+    width: 100vw;
+    background-color: #202020;
+    box-shadow: 0px 2px 5px black;
+    text-decoration: none;
+    text-shadow: 0px 2px 5px black;
+    z-index:4;
+  }
+
+  .fundo-menu {
+    position: fixed;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1S;
+    z-index: 3;
+  }
+  #check:checked ~.fundo-menu {
+    transition: all 1S; 
+    background: rgba(0, 0, 0, 0.623);   
+  }
+
+  .menu, .icon-menu {
+    position: fixed;
+    display: inline;
+    z-index: 5;
+  }
+  .menu hr{display: none;}
+  .menu li{
+    text-align: left;
+    padding: 10px 0 10px 0;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .icon-menu img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    position: fixed;
+    transform: translateX(100%);
+    transition: all 1S;    
+  }
+
+   .menu {
+    position: fixed;
+    background: linear-gradient(to right,rgba(255, 255, 255) 50vw, transparent 0vw);
+    font-size: 1em;
+    margin: 40px 0px 10px;
+    width: 100vw;
+    height: 100vh;
+    left: -100%;
+    box-shadow: none;
+    transition: all 1S;
+  }
+
+  .menu a {
+    font-size: 1em;
+    color: black;
+    
+  }
+  .menu a:hover { 
+    background-color: transparent;  
+    color: black;
+    font-size: 1.1em;
+    transition: all 1s;
+  }
+
+    .enviar {
+    color: #202020;
+    background-color: white;
+    margin-top: 10px;
+    width: 30%;
+    transition: all 1s;
+  }
+}
