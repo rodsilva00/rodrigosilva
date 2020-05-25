@@ -34,14 +34,12 @@ body {
   color: whitesmoke;
 }
 
-.icon-menu {
-  display: none;    
-  width: 30px;
-  height: 30px;}
-
 .icon-menu {display: none;}
 
 .menu {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0vh;
   height: 50px;
   position: fixed;
   width: 100vw;
@@ -56,6 +54,11 @@ body {
 .menu ul {
   margin: 15px;
   display: inline-flex;
+}
+
+.logo {
+  margin: 5px;
+  left: 0;
 }
 
 .world::after {
@@ -193,7 +196,7 @@ mark{
 }
 /*CSS - -time-line*/
 
-/* CSS-- timeline (régua vertical) */
+/* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -230,7 +233,7 @@ mark{
   text-align: start;
 }
 
-/* Container para conteudo */
+/* Container around content */
 .container {
   padding: 10px 50px;
   position: relative;
@@ -238,7 +241,7 @@ mark{
   width: 50%;
 }
 
-/* Circulos da Time-line */
+/* The circles on the timeline */
 .container::after {
   content: '';
   position: absolute;
@@ -253,17 +256,17 @@ mark{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
-/* CSs - -recipiente à esquerda */
+/* Place the container to the left */
 .left {
   left: 0;
 }
 
-/* CSs - -recipiente à direita */
+/* Place the container to the right */
 .right {
   left: 50%;
 }
 
-/* Setas ao container esquerdo (apontando para a direita) */
+/* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
   height: 0;
@@ -278,7 +281,7 @@ mark{
   
 }
 
-/* Setas ao container direito (apontando para a esquerda) */
+/* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
   height: 0;
@@ -292,12 +295,12 @@ mark{
   border-color: transparent white transparent transparent;
 }
 
-/* Css --  círculo para recipientes no lado direito*/
+/* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
 }
 
-/* Css--conteudo time-line */
+/* The actual content */
 .content {
   padding: 20px 30px;
   background-color: white;
@@ -602,6 +605,9 @@ footer{ background-color: white;}
     font-size: 1.1em;
     transition: all 1s;
   }
+
+  .logo {margin-right: 5%;}
+  .fundo-logo {fill: none;}
 
     .enviar {
     color: #202020;
