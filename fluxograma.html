@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma Detalhado: OCR e Extração de Dados</title>
+    <style>
+        body {
+            font-family: FreeMono, monospace;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #08225e;
+            overflow-x: auto;
+        }
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap; /* Ajuste para permitir que os elementos quebrem linha */
+        }
+        .step-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            flex-basis: 100%; /* O contêiner ocupará 100% do espaço no modo mobile */
+            max-width: 300px; /* Definindo um valor máximo para controlar o tamanho em telas grandes */
+        }
+        .number {
+            color: #ecf0f1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .step {
+            background-color: #202020;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            width: 100%; /* Ajuste para responsividade */
+            max-width: 250px; /* Mantém o tamanho máximo mesmo em telas grandes */
+            height: 100px; /* Remove a altura fixa para que o conteúdo não quebre */
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .substeps {
+            display: none;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .substep {
+            background-color: #bb2949;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .substep:hover {
+            background-color: #9e2236;
+        }
+        .explanation {
+            display: none;
+            background-color: #f9f9f9;
+            border-left: 5px solid #bb2949;
+            color: black;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 0.9em;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            .flowchart {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="G:\Meu Drive\DEV\PP_antifraude\app\src\Pepe_Pose_C_FLAT (p).png" width="200"
+        height="200" />FLUXO: PP ANTIFRAUDE</h1>
+    <div class="flowchart">
+        <div class="step-container">
+            <div class="number">1</div>
+            <div class="step" onclick="toggleSubsteps(this)">🤖<br> Captura de Documentos (Selenium e Power Automate)</div>
+            <div class="substeps">
+                <div class="substep" onclick="toggleExplanation(this)">1.1. Listagem de Processos
+                    <div class="explanation">
+                        a. Identificar processos que requerem captura de documentos<br>
+                        b. Criar lista priorizada de processos para captura<br>
+                        c. Verificar status atual de cada processo<br>
+                        d. Atualizar lista de captura conforme necessário
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">1.2. Automação com RPA (Selenium)
+                    <div class="explanation">
+                        a. Scripts em Python utilizando Selenium<br>
+                        b. Navegação web automatizada<br>
+                        c. Seletores para identificação de elementos na página<br>
+                        d. Lógica de extração e download de documentos<br>
+                        e. Gerenciar sessões e cookies para manter autenticação
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">1.3. Automação com RPA (Power Automate)
+                    <div class="explanation">
+                        a. Fluxos de trabalho no Power Automate<br>
+                        b. Conectores para sistemas relevantes e da justiça<br>
+                        c. Ações para navegação e extração de dados<br>
+                        d. Variáveis e expressões para lógica de negócios<br>
+                        e. Configurar tratamento de erros e notificações
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">1.4. Armazenamento no Google Drive
+                    <div class="explanation">
+                        a. Conexão segura com o Google Drive<br>
+                        b. Pastas para organização dos documentos<br>
+                        c. Lógica de nomeação de arquivos<br>
+                        d. Permissões de acesso apropriadas
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">1.5. Controle e Monitoramento
+                    <div class="explanation">
+                        a. Geração de logs de captura para cada documento<br>
+                        b. Dashboard para acompanhamento do progresso<br>
+                        c. Alertas para falhas ou atrasos na captura<br>
+                        d. Estabelecer processo de revisão e correção de erros<br>
+                        e. Verificar eficiência das capturas 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow"></div>
+        <div class="step-container">
+            <div class="number">2</div>
+            <div class="step" onclick="toggleSubsteps(this)">🔍<br> Processamento de Documentos (OCR e Leitura de Cód. de Barras)</div>
+            <div class="substeps">
+                <div class="substep" onclick="toggleExplanation(this)">2.1. Abertura e Verificação do PDF
+                    <div class="explanation">
+                        a. Abrir arquivo PDF usando pdfplumber<br>
+                        b. Verificar tamanho do arquivo<br>
+                        c. Se necessário, comprimir o PDF usando a função comprimir_pdf<br>
+                        d. Tratamento de erro: Captura exceções ao abrir arquivos corrompidos
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">2.2. OCR usando OCR.space API
+                    <div class="explanation">
+                        a. Prepara requisição para OCR.space API<br>
+                        b. Envia arquivo PDF para OCR.space API<br>
+                        c. Recebe e processar resposta da API<br>
+                        d. Extrae texto do resultado da API<br>
+                        e. Tratamento de erro: Lidar com falhas de conexão e respostas inesperadas da API
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">2.3. OCR Adicional com Tesseract
+                    <div class="explanation">
+                        a. Usar pdfplumber para extrair texto de páginas com conteúdo suficiente<br>
+                        b. Para páginas com pouco texto, converter para imagem e usar pytesseract<br>
+                        c. Aplicar pré-processamento na imagem (conversão para escala de cinza)<br>
+                        d. Tratamento de erro: Lidar com falhas no processamento de imagens
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">2.4. Leitura de Código de Barras
+                    <div class="explanation">
+                        a. Converter páginas do PDF para imagens de alta resolução<br>
+                        b. Usar zxingcpp e visão computacional para detectar e ler códigos de barras<br>
+                        c. Armazenar informações dos códigos de barras detectados no arquivo de texto da OCR<br>
+                        d. Tratamento de erro: Lidar com códigos de barras ilegíveis ou danificados
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">2.5. Pós-processamento de Texto
+                    <div class="explanation">
+                        a. Aplica correções e limpeza no texto extraído usando regex<br>
+                        b. Remove padrões específicos como assinaturas eletrônicas<br>
+                        c. Padroniza o formato do texto (lowercase, remoção de espaços extras)<br>
+                        d. Correção: Implementar verificações adicionais para garantir integridade dos dados
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">2.6. Medidas de Segurança
+                    <div class="explanation">
+                        a. Implementar verificação de tipos de arquivos para prevenir injeção de código malicioso<br>
+                        b. Limitar o tamanho máximo de arquivo processável<br>
+                        c. Sanitizar entradas para prevenir ataques de injeção<br>
+                        d. Implementar logging seguro para rastrear operações e detectar anomalias
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow"></div>
+        <div class="step-container">
+            <div class="number">3</div>
+            <div class="step" onclick="toggleSubsteps(this)">🧠<br> Extração de Dados com LLM</div>
+            <div class="substeps">
+                <div class="substep" onclick="toggleExplanation(this)">3.1. Preparação para o LLM
+                    <div class="explanation">
+                        a. Configura cliente Groq e carregar chave API de forma segura (variavel de ambiente)<br>
+                        b. Define função com prompt do sistema para o LLM com instruções detalhadas da extração dos dados<br>
+                        c. Formatar o texto extraído para envio ao LLM<br>
+                        d. Segurança: Implementar rotação regular de chaves API
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">3.2. Processamento com LLM
+                    <div class="explanation">
+                        a. Enviar texto para o modelo LLM (llama3-70b-8192)<br>
+                        b. Receber resposta do LLM em formato JSON<br>
+                        c. Extrae e valida o JSON da resposta<br>
+                        d. Tratamento de erro: Implementar retry com backoff exponencial para falhas de API
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">3.3. Pós-processamento do JSON
+                    <div class="explanation">
+                        a. Corrige e limpa o JSON recebido usando regex<br>
+                        b. Verifica e corrigi erros comuns no JSON<br>
+                        c. Converte o JSON em um dicionário Python<br>
+                        d. Tratamento de erro: Implementar fallback para JSON mal formatado
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">3.4. Extração de Dados Específicos
+                    <div class="explanation">
+                        a. Classifiica documento e Extrai informações baseadas no tipo de documento<br>
+                        b. Processar campos específicos (nome, endereço, códigos)<br>
+                        c. Adicionar códigos de barra lidos separadamente ao JSON, mantendo a extração de codigo de barras pela LLM e por script <br>
+                        d. Correção: Implementar validações de formato para campos críticos
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">3.5. Medidas de Segurança de Dados
+                    <div class="explanation">
+                        a. Implementar mascaramento de dados sensíveis (ex: CPF, números de cartão)<br>
+                        b. Garantir que dados sensíveis não sejam logados ou armazenados desnecessariamente<br>
+                        c. Implementar criptografia para dados em repouso e em trânsito<br>
+                        d. Estabelecer políticas de retenção e exclusão de dados
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow"></div>
+        <div class="step-container">
+            <div class="number">4</div>
+            <div class="step" onclick="toggleSubsteps(this)">💾<br> Armazenamento de Dados</div>
+            <div class="substeps">
+                <div class="substep" onclick="toggleExplanation(this)">4.1. Conexão com o Banco de Dados
+                    <div class="explanation">
+                        a. Estabelecer conexão segura com o banco de dados PostgreSQL<br>
+                        b. Implementar pool de conexões para gerenciar múltiplas conexões<br>
+                        c. Configurar timeouts e reconexões automáticas<br>
+                        d. Tratamento de erro: Implementar mecanismo de retry para falhas de conexão
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">4.2. Preparação dos Dados
+                    <div class="explanation">
+                        a. Validar e sanitizar os dados extraídos antes do armazenamento<br>
+                        b. Converter formatos de dados conforme necessário (datas, números, etc.)<br>
+                        c. Gerar identificadores únicos para cada registro, se aplicável<br>
+                        d. Implementar lógica para detectar e lidar com registros duplicados
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">4.3. Inserção nas Tabelas Específicas
+                    <div class="explanation">
+                        a. Mapear dados extraídos para as tabelas correspondentes:<br>
+                        - public.rotinas_documentos_tjam<br>
+                        - Custom.Tjam_documentos_conta_energia<br>
+                        - Custom.Tjam_documentos_conta_Telefone<br>
+                        - Custom.Tjam_documentos_conta_agua<br>
+                        - Custom.Tjam_procuracao_judicial<br>
+                        - Custom.Tabs_documentos_bancario<br>
+                        b. Utilizar prepared statements para inserções seguras e eficientes<br>
+                        c. Implementar lógica de upsert (INSERT ou UPDATE) quando apropriado<br>
+                        d. Tratamento de erro: Implementar rollback em caso de falhas parciais
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">4.4. Controle de Transações
+                    <div class="explanation">
+                        a. Iniciar transação para cada conjunto de inserções relacionadas<br>
+                        b. Implementar pontos de commit para grandes volumes de dados<br>
+                        c. Utilizar mecanismo de savepoint para recuperação parcial em caso de erros<br>
+                        d. Garantir atomicidade das operações para manter integridade dos dados
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">4.5. Logging e Auditoria
+                    <div class="explanation">
+                        a. Registrar todas as operações de inserção e atualização no banco de dados<br>
+                        b. Implementar trilha de auditoria para rastrear mudanças nos dados<br>
+                        c. Armazenar metadados como timestamp, usuário responsável e origem dos dados<br>
+                        d. Configurar alertas para operações em massa ou padrões incomuns de inserção
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">4.6. Medidas de Segurança
+                    <div class="explanation">
+                        a. Implementar criptografia para dados sensíveis no banco de dados<br>
+                        b. Utilizar conexões SSL/TLS para comunicação com o banco de dados<br>
+                        c. Aplicar princípio de menor privilégio para acessos ao banco de dados<br>
+                        d. Realizar backups regulares e testar procedimentos de recuperação
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow"></div>
+        <div class="step-container">
+            <div class="number">5</div>
+            <div class="step" onclick="toggleSubsteps(this)">🕵️<br> Análise e Relatório</div>
+            <div class="substeps">
+                <div class="substep" onclick="toggleExplanation(this)">5.1. Extração e Transformação de Dados (ETL)
+                    <div class="explanation">
+                        a. Extração: Coletar dados de documentos processados (ex: PDFs, imagens) e de banco de dados<br>
+                        b. Transformação: Processar os dados extraídos, incluindo limpeza, normalização e enriquecimento<br>
+                        c. Carregamento: Armazenar dados transformados em um banco de dados para consulta e análise futura<br>
+                        d. Implementar procedimentos de agendamento para ETL regular
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">5.2. Análise de Dados
+                    <div class="explanation">
+                        a. Analisar dados extraídos para identificar padrões e insights<br>
+                        b. Utilizar ferramentas de BI (Business Intelligence) para visualização de dados<br>
+                        c. Realizar análises estatísticas e relatórios de tendência<br>
+                        d. Criar dashboards dinâmicos para facilitar a visualização
+                    </div>
+                </div>
+                <div class="substep" onclick="toggleExplanation(this)">5.3. Indícios de Fraude
+                    <div class="explanation">
+                        a. Cruzamento dos dados entre todos documentos armazenados<br>
+                        b. Identificar padrões de comportamento suspeitos, como:<br>
+                        <table>
+                            <tr>
+                                <th>DOC</th>
+                                <th>TIPO DE IF</th>
+                                <th>QTD DOC COM IF</th>
+                            </tr>
+                            <tr>
+                                <td>CE</td>
+                                <td>Pessoas distintas com a mesma nota_fiscal</td>
+                                <td>124</td>
+                            </tr>
+                            <tr>
+                                <td>CE</td>
+                                <td>Pessoas distintas com o mesmo codigo_barras</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>CE</td>
+                                <td>Pessoas distintas com o mesmo numero_medidor</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>TEL</td>
+                                <td>Pessoas distintas com o mesmo numero_telefone</td>
+                                <td>81</td>
+                            </tr>
+                        </table>
+                        c. Analisar documentos que apresentem indícios de fraude<br>
+                        d. Implementar procedimentos de investigação para documentos identificados<br>
+                        e. Relatar indícios de fraude às autoridades competentes, se necessário
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubsteps(element) {
+            const substeps = element.nextElementSibling;
+            if (substeps.style.display === "none" || substeps.style.display === "") {
+                substeps.style.display = "block";
+            } else {
+                substeps.style.display = "none";
+            }
+        }
+
+        function toggleExplanation(element) {
+            const explanation = element.querySelector('.explanation');
+            if (explanation.style.display === "none" || explanation.style.display === "") {
+                explanation.style.display = "block";
+            } else {
+                explanation.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
